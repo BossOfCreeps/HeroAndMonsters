@@ -1,12 +1,12 @@
 from random import randint
 from time import sleep
 
-from src.Bonuses.Apple import Apple
-from src.Characters.Hero import Hero
-from src.Characters.Monster import Monster
-from src.Bonuses.Sword import Sword
-from src.lib import get_decision
-import src.constants as const
+from scripts.Bonuses.Apple import Apple
+from scripts.Characters.Hero import Hero
+from scripts.Characters.Monster import Monster
+from scripts.Bonuses.Sword import Sword
+from scripts.lib import get_decision
+import scripts.constants as const
 
 
 # Hero meet monster
