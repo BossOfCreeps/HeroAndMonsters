@@ -4,7 +4,7 @@ from Characters.Character import Character
 from Bonuses.Apple import Apple
 from Characters.Monster import Monster
 from Bonuses.Sword import Sword
-from constants import MONSTERS_COUNTER
+from constants import MONSTERS_COUNTER, LOSE_STR, VICTORY_STR
 
 
 class Hero(Character):
@@ -27,6 +27,10 @@ class Hero(Character):
 
     # Fight with monster
     def fight(self, monster: Monster):
+        # Does hero can kill monster?
+        if self._power < monster.health:
+            self.__death()
+
         # Make new health
         self._health -= monster.power
 
@@ -44,12 +48,12 @@ class Hero(Character):
     # Death
     @staticmethod
     def __death():
-        sys.exit(const.LOSE_STR)
+        sys.exit(LOSE_STR)
 
     # Victory
     @staticmethod
     def __victory():
-        sys.exit(const.VICTORY_STR)
+        sys.exit(VICTORY_STR)
 
     # Getters and setters
 
