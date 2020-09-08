@@ -1,7 +1,7 @@
 from random import randint
 
-from .Bonus import Bonus
-from ..constants import sword_max_value
+from Bonuses.Bonus import Bonus
+from constants import sword_max_value
 
 
 class Sword(Bonus):

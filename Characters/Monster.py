@@ -1,7 +1,7 @@
 from random import randint
 
-from .Character import Character
-from ..constants import monster_max_power, monster_max_health
+from Characters.Character import Character
+from constants import monster_max_power, monster_max_health
 
 
 class Monster(Character):

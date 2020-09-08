@@ -1,10 +1,11 @@
 import sys
 
-from .Character import Character
-from ..Bonuses.Apple import Apple
-from .Monster import Monster
-from ..Bonuses.Sword import Sword
-from ..constants import MONSTERS_COUNTER
+from Characters.Character import Character
+from Bonuses.Apple import Apple
+from Characters.Monster import Monster
+from Bonuses.Sword import Sword
+from constants import MONSTERS_COUNTER
+
 
 class Hero(Character):
     def __init__(self):

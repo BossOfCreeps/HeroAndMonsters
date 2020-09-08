@@ -1,7 +1,7 @@
 from random import randint
 
-from .Bonus import Bonus
-from ..constants import apple_max_value
+from Bonuses.Bonus import Bonus
+from constants import apple_max_value
 
 
 class Apple(Bonus):
